@@ -21,6 +21,9 @@ export default {
 			},
 			container: {
 				center: true,
+				padding: {
+					DEFAULT: '1rem',
+				},
 				screens: {
 					...defaultTheme.screens,
 					'2xl': '1400px',

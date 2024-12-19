@@ -5,8 +5,8 @@ import SubscribeForm from '@/components/ui/SubscribeForm';
 export default function Footer() {
 	return (
 		<footer className="bg-black text-white">
-			<div className="container flex gap-x-24 py-20">
-				<div className="flex-1">
+			<div className="container flex flex-wrap flex-col md:flex-row gap-x-24 gap-y-12 py-16 sm:py-20">
+				<div className="xl:w-1/3">
 					<Image
 						src="/images/apexo-white.svg"
 						alt="Logo of Apexo"
@@ -19,10 +19,10 @@ export default function Footer() {
 						focus in our pursuit of mastery and joyful.
 					</p>
 				</div>
-				<div className="flex-1 flex gap-x-24">
+				<div className="flex-1 flex justify-between gap-y-12 gap-x-24">
 					<div className="flex-1">
 						<h5 className="text-lg mb-4">Pages</h5>
-						<ul className="flex flex-col gap-y-2">
+						<ul className="flex flex-col gap-y-3">
 							<li>
 								<Link href="/" className="hover:underline underline-offset-2">
 									Home
@@ -52,10 +52,10 @@ export default function Footer() {
 					</div>
 					<div className="flex-1">
 						<h5 className="text-lg mb-4">Others</h5>
-						<ul className="flex flex-col gap-y-2">
+						<ul className="flex flex-col gap-y-3">
 							<li>
 								<Link href="/" className="hover:underline underline-offset-2">
-									Terms &amp; Conditions
+									Terms
 								</Link>
 							</li>
 							<li>
@@ -67,12 +67,15 @@ export default function Footer() {
 					</div>
 				</div>
 				<div className="flex-1">
-					<h5 className="text-lg mb-2">Subscribe</h5>
+					<h5 className="text-lg mb-4">Subscribe</h5>
 					<SubscribeForm />
 				</div>
 			</div>
-			<div className="container flex gap-x-24 border-t-light-gray border-t pt-6 pb-12">
-				<div className="flex-1">
+			<div className="container">
+				<hr />
+			</div>
+			<div className="container flex flex-wrap flex-col md:flex-row justify-between gap-y-8 gap-x-24 pt-6 pb-12">
+				<div>
 					<h5 className="text-lg mb-1">Copyright</h5>
 					<p>
 						Developed By{' '}
@@ -81,7 +84,7 @@ export default function Footer() {
 						</a>
 					</p>
 				</div>
-				<div className="flex-1">
+				<div>
 					<h5 className="text-lg mb-1">Contact Us</h5>
 					<p>
 						<a
@@ -92,11 +95,11 @@ export default function Footer() {
 						</a>
 					</p>
 				</div>
-				<div className="flex-1">
+				<div>
 					<h5 className="text-lg mb-1">Address</h5>
 					<p>4927 Lynn Avenue, Kennan, WI 54537</p>
 				</div>
-				<div className="flex-1 flex items-center justify-end gap-x-7">
+				<div className="flex items-center md:justify-end gap-x-7">
 					<a
 						href="#"
 						className="bg-white rounded-full w-12 h-12 flex items-center justify-center"
