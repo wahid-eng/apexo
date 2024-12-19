@@ -2,18 +2,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import SubscribeForm from '@/components/ui/SubscribeForm';
 
+import whiteLogo from '@/public/images/apexo-white.svg';
+
 export default function Footer() {
 	return (
 		<footer className="bg-black text-white">
 			<div className="container flex flex-wrap flex-col md:flex-row gap-x-24 gap-y-12 py-16 sm:py-20">
 				<div className="xl:w-1/3">
-					<Image
-						src="/images/apexo-white.svg"
-						alt="Logo of Apexo"
-						width={200}
-						height={52}
-						className="mb-6"
-					/>
+					<Image src={whiteLogo} alt="Logo of Apexo" className="mb-6" />
 					<p className="text-lg">
 						We&apos;re a team of strategic creator and digital innovator, united
 						focus in our pursuit of mastery and joyful.

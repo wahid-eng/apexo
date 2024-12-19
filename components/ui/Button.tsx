@@ -17,7 +17,7 @@ const Button: React.FC<ButtonProps> = ({
 		<button
 			type={type}
 			className={twMerge(
-				'bg-light-black hover:bg-black text-white px-6 py-2 rounded-full transition-all',
+				'bg-light-black hover:bg-black text-white px-4 py-2 rounded-full transition-all',
 				className
 			)}
 			onClick={onClick}

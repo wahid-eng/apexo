@@ -19,7 +19,7 @@ export default function SubscribeForm() {
 		<form onSubmit={handleSubmit(onSubmit)}>
 			<div className="relative">
 				<input
-					className={`text-light-black block w-full focus-within:outline-none h-16 pl-6 pe-32 rounded-full ${
+					className={`text-light-black block w-full focus-within:outline-none h-14 pl-6 pe-32 rounded-full ${
 						errors.email
 							? 'bg-red-200 placeholder:text-red-600'
 							: 'bg-white placeholder:text-light-black'
@@ -36,7 +36,7 @@ export default function SubscribeForm() {
 
 				<Button
 					type="submit"
-					className="absolute top-1/2 -translate-y-1/2 end-4 px-4"
+					className="absolute top-1/2 -translate-y-1/2 end-2 px-4"
 				>
 					Subscribe
 				</Button>

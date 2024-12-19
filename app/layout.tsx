@@ -3,6 +3,7 @@ import './globals.css';
 import Header from '@/components/layouts/Header';
 import { dmSans, robotoSerif } from '@/lib/fonts';
 import Footer from '@/components/layouts/Footer';
+import { GlobalContextProvider } from '@/context/GlobalContext';
 
 export const metadata: Metadata = {
 	title: 'Apexo | Empowering Digital Solutions',
@@ -18,9 +19,11 @@ export default function RootLayout({
 	return (
 		<html lang="en" className={`${dmSans.className} ${robotoSerif.className}`}>
 			<body className="font-sans antialiased">
-				<Header />
-				{children}
-				<Footer />
+				<GlobalContextProvider>
+					<Header />
+					{children}
+					<Footer />
+				</GlobalContextProvider>
 			</body>
 		</html>
 	);
