@@ -3,11 +3,11 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-import { useGlobalContext } from '@/context/GlobalContext';
+// import { useGlobalContext } from '@/context/GlobalContext';
 
 export default function Navbar() {
 	const currentPath = usePathname();
-	const { state } = useGlobalContext();
+	// const { state } = useGlobalContext();
 
 	return (
 		<nav className="hidden lg:flex">
