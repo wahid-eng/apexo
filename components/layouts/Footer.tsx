@@ -12,7 +12,7 @@ export default function Footer() {
 						alt="Logo of Apexo"
 						width={200}
 						height={52}
-						className="mb-4"
+						className="mb-6"
 					/>
 					<p className="text-lg">
 						We&apos;re a team of strategic creator and digital innovator, united
@@ -29,22 +29,34 @@ export default function Footer() {
 								</Link>
 							</li>
 							<li>
-								<Link href="/" className="hover:underline underline-offset-2">
+								<Link
+									href="/about"
+									className="hover:underline underline-offset-2"
+								>
 									About Us
 								</Link>
 							</li>
 							<li>
-								<Link href="/" className="hover:underline underline-offset-2">
+								<Link
+									href="/services"
+									className="hover:underline underline-offset-2"
+								>
 									Our Services
 								</Link>
 							</li>
 							<li>
-								<Link href="/" className="hover:underline underline-offset-2">
+								<Link
+									href="/projects"
+									className="hover:underline underline-offset-2"
+								>
 									Our Projects
 								</Link>
 							</li>
 							<li>
-								<Link href="/" className="hover:underline underline-offset-2">
+								<Link
+									href="/contact"
+									className="hover:underline underline-offset-2"
+								>
 									Contact Us
 								</Link>
 							</li>
@@ -54,12 +66,18 @@ export default function Footer() {
 						<h5 className="text-lg mb-4">Others</h5>
 						<ul className="flex flex-col gap-y-3">
 							<li>
-								<Link href="/" className="hover:underline underline-offset-2">
+								<Link
+									href="/terms"
+									className="hover:underline underline-offset-2"
+								>
 									Terms
 								</Link>
 							</li>
 							<li>
-								<Link href="/" className="hover:underline underline-offset-2">
+								<Link
+									href="/privacy"
+									className="hover:underline underline-offset-2"
+								>
 									Privacy Policy
 								</Link>
 							</li>
@@ -79,7 +97,10 @@ export default function Footer() {
 					<h5 className="text-lg mb-1">Copyright</h5>
 					<p>
 						Developed By{' '}
-						<a href="#" className="hover:underline underline-offset-2">
+						<a
+							href="https://wahideng.com"
+							className="hover:underline underline-offset-2"
+						>
 							Mohammad Wahid
 						</a>
 					</p>
