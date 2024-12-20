@@ -2,8 +2,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import greenLogo from '@/public/images/apexo-green.svg';
-import Navbar from '@/components/ui/Navbar';
 import NavbarToggler from '../ui/NavbarToggler';
+import ActiveLink from '../ui/ActiveLink';
 
 export default function Header() {
 	return (
@@ -15,7 +15,35 @@ export default function Header() {
 					</Link>
 				</div>
 
-				<Navbar />
+				<nav className="hidden lg:flex">
+					<ul className="flex gap-x-8 text-lg">
+						<li>
+							<ActiveLink href="/" activeClassName="text-light-green">
+								Home
+							</ActiveLink>
+						</li>
+						<li>
+							<ActiveLink href="/services" activeClassName="text-light-green">
+								Services
+							</ActiveLink>
+						</li>
+						<li>
+							<ActiveLink href="/projects" activeClassName="text-light-green">
+								Projects
+							</ActiveLink>
+						</li>
+						<li>
+							<ActiveLink href="/about" activeClassName="text-light-green">
+								About Us
+							</ActiveLink>
+						</li>
+						<li>
+							<ActiveLink href="/contact" activeClassName="text-light-green">
+								Contact Us
+							</ActiveLink>
+						</li>
+					</ul>
+				</nav>
 
 				<div className="flex items-center gap-x-2">
 					<Link
