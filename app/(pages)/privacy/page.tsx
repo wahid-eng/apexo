@@ -1,3 +1,11 @@
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+	title: 'Privacy Policy | Apexo',
+	description:
+		"Read Apexo's privacy policy to understand how we protect your data and ensure your online privacy.",
+};
+
 export default function Privacy() {
 	return (
 		<main className="container py-16">
@@ -86,7 +94,7 @@ export default function Privacy() {
 			<h2 className="mb-2 mt-4">7. Changes to This Privacy Policy</h2>
 			<p>
 				We may update this Privacy Policy from time to time. When we make
-				significant changes, we will notify you by updating the "Effective Date"
+				significant changes, we will notify you by updating the January 01, 2025
 				at the top of this page. We encourage you to review this policy
 				periodically to stay informed about how we protect your information.
 			</p>

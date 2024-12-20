@@ -1,3 +1,11 @@
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+	title: 'Terms and Conditions | Apexo',
+	description:
+		"Review the terms and conditions for using Apexo's website and services. Ensure compliance with our policies.",
+};
+
 export default function Terms() {
 	return (
 		<main className="container py-16">
@@ -76,7 +84,7 @@ export default function Terms() {
 			<h2 className="mb-2 mt-4">10. Changes to Terms</h2>
 			<p>
 				Apexo reserves the right to modify these Terms of Service at any time.
-				Any changes will be posted on this page, with the "Effective Date"
+				Any changes will be posted on this page, with the January 01, 2025
 				updated accordingly. Your continued use of our services after changes
 				are posted constitutes acceptance of the new terms.
 			</p>
